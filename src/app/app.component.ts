@@ -24,7 +24,16 @@ export class AppComponent {
             this.min = this.chartValues[this.chartValues.length - 20].time;
             this.max = item.time;
           }
+
+          // prevent running out-of-memory when client is connected for too long
+          if (this.chartValues.length > 500) {
+            this.chartValues = this.chartValues.slice(480);
+          }
         } else {
+          if (this.messages.length > 100) {
+            this.messages = this.messages.slice(80);
+          }
+
           this.messages = [...this.messages, item];
         }
       });
