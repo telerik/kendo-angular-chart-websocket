@@ -1,3 +1,5 @@
+##  This repository is no longer updated. To access the current version, refer to the [`kendo-angular` repository](https://github.com/telerik/kendo-angular/tree/master/examples/projects/chart-websockets).
+
 # WebsocketCharts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
